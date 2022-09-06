@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import SatelliteAltIcon from '@mui/icons-material/SatelliteAlt';
+import RocketIcon from '@mui/icons-material/Rocket';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -126,7 +127,9 @@ const Navbar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar sx={{ bgcolor: 'secondary.main' }} alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar sx={{ bgcolor: 'text.primary' }}>
+                    <RocketIcon fontSize='large' />
+                </Avatar>
               </IconButton>
             </Tooltip>
             <Menu
