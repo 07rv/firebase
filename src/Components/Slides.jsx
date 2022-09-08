@@ -9,7 +9,7 @@ import img5 from "../Images/img5.jpeg";
 
 const Slides = () => {
     return (
-        <Box flex={4} p={2} sx={{ m: 1 , }}>
+        <Box flex={4} p={0} sx={{ m: 1 , }}>
             <Carousel fade controls={false}>
                 <Carousel.Item interval={3000}>
                     <img

@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Box>
         <Navbar />
-        <Stack sx={{ m: 2 ,}} direction="row" spacing={2} justifyContent="space-between">
+        <Stack sx={{ m: 2, }} direction="row" spacing={1} justifyContent="space-between">
           <Sidebar />
           <Slides />
           <Rightbar />
