@@ -23,6 +23,7 @@ const Slides = () => {
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
+
                 <Carousel.Item interval={2000}>
                     <img
                         height="400" width="388"
@@ -36,6 +37,7 @@ const Slides = () => {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
+
                 <Carousel.Item interval={2000}>
                     <img
                         height="400" width="388"
@@ -51,6 +53,7 @@ const Slides = () => {
                         </p>
                     </Carousel.Caption>
                 </Carousel.Item>
+
                 <Carousel.Item interval={2000}>
                     <img
                         height="400" width="388"
@@ -63,6 +66,7 @@ const Slides = () => {
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
+                
                 <Carousel.Item interval={2000}>
                     <img
                         height="400" width="388"
