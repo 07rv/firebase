@@ -9,7 +9,7 @@ import img5 from "../Images/img5.jpeg";
 
 const Slides = () => {
     return (
-        <Box sx={{m:1}}>
+        <Box sx={{ m: 1 }}>
             <Carousel fade controls={false}>
                 <Carousel.Item interval={3000}>
                     <img
@@ -18,9 +18,13 @@ const Slides = () => {
                         src={img1}
                         alt="First slide"
                     />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <Carousel.Caption sx={{bgcolor: 'error.main'}}>
+                        <Box sx={{height: '300px', bgcolor: 'error.main',  }}>
+                            <h1 sx={{alignItems: 'flex-start'}}>First slide label</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, 
+                                obcaecati similique. Repellendus totam dignissimos et nobis sint ut corporis ratione! 
+                                Illo perspiciatis eos voluptate sapiente eius eveniet delectus rerum nihil?</p>
+                        </Box>
                     </Carousel.Caption>
                 </Carousel.Item>
 
@@ -66,7 +70,7 @@ const Slides = () => {
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                
+
                 <Carousel.Item interval={2000}>
                     <img
                         height="400" width="388"
