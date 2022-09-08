@@ -28,8 +28,7 @@ const Navbar = () => {
   };
 
   return (
-    <Box sx={{m:1}}>
-      <AppBar position="static" sx={{ borderRadius: '10px', bgcolor: 'text.primary' }}>
+      <AppBar position="sticky" sx={{ bgcolor: 'text.primary' }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <SatelliteAltIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -127,8 +126,6 @@ const Navbar = () => {
           </Toolbar>
         </Container>
       </AppBar>
-    </Box>
-
   );
 };
 export default Navbar;
