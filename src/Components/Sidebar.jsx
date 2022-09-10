@@ -1,91 +1,60 @@
 import React from 'react'
 import {
     Box, List, ListItem,
-    ListItemButton, ListItemIcon, ListItemText, Switch
-} from '@mui/material'
-import HomeIcon from '@mui/icons-material/Home';
-import ArticleIcon from '@mui/icons-material/Article';
-import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
-import StorefrontIcon from '@mui/icons-material/Storefront';
+    ListItemButton, ListItemIcon, ListItemText
+} from '@mui/material';
+import WifiTetheringErrorIcon from '@mui/icons-material/WifiTetheringError';
 import Diversity2Icon from '@mui/icons-material/Diversity2';
-import SettingsIcon from '@mui/icons-material/Settings';
-import FolderSharedIcon from '@mui/icons-material/FolderShared';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import StarRateIcon from '@mui/icons-material/StarRate';
+import PanoramaIcon from '@mui/icons-material/Panorama';
 
-const Sidebar = ({ mode, setMode }) => {
+const Sidebar = () => {
     return (
-        <Box flex={1.15} sx={{ display: { xs: "none", sm: "block", } }}>
+        <Box flex={1.15} sx={{ display: { xs: "none", sm: "block", } ,}}>
             <Box position="fixed">
                 <List>
                     <ListItem disablePadding>
-                        <ListItemButton component="a" href='#home'>
+                        <ListItemButton component="a" href='/blog'>
                             <ListItemIcon>
-                                <HomeIcon />
+                                <WifiTetheringErrorIcon />
                             </ListItemIcon>
-                            <ListItemText primary="Homepage" />
+                            <ListItemText primary="Home" />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href='/blog'>
+                            <ListItemIcon>
+                                <Diversity2Icon />
+                            </ListItemIcon>
+                            <ListItemText primary="Cosmos" />
                         </ListItemButton>
                     </ListItem>
 
                     <ListItem disablePadding>
                         <ListItemButton component="a" href='#pages'>
                             <ListItemIcon>
-                                <ArticleIcon />
+                                <WbSunnyIcon />
                             </ListItemIcon>
-                            <ListItemText primary="Pages" />
+                            <ListItemText primary="Soloar System" />
                         </ListItemButton>
                     </ListItem>
 
                     <ListItem disablePadding>
                         <ListItemButton component="a" href='#group'>
                             <ListItemIcon>
-                                <PeopleAltIcon />
+                                <StarRateIcon />
                             </ListItemIcon>
-                            <ListItemText primary="Groups" />
+                            <ListItemText primary="Universe" />
                         </ListItemButton>
                     </ListItem>
 
                     <ListItem disablePadding>
                         <ListItemButton component="a" href='#marketplace'>
                             <ListItemIcon>
-                                <StorefrontIcon />
+                                <PanoramaIcon />
                             </ListItemIcon>
-                            <ListItemText primary="Marketplace" />
-                        </ListItemButton>
-                    </ListItem>
-
-                    <ListItem disablePadding>
-                        <ListItemButton component="a" href='#friends'>
-                            <ListItemIcon>
-                                <Diversity2Icon />
-                            </ListItemIcon>
-                            <ListItemText primary="Friends" />
-                        </ListItemButton>
-                    </ListItem>
-
-                    <ListItem disablePadding>
-                        <ListItemButton component="a" href='#setting'>
-                            <ListItemIcon>
-                                <SettingsIcon />
-                            </ListItemIcon>
-                            <ListItemText primary="Setting" />
-                        </ListItemButton>
-                    </ListItem>
-
-                    <ListItem disablePadding>
-                        <ListItemButton component="a" href='#profile'>
-                            <ListItemIcon>
-                                <FolderSharedIcon />
-                            </ListItemIcon>
-                            <ListItemText primary="Profile" />
-                        </ListItemButton>
-                    </ListItem>
-
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <DarkModeIcon />
-                            </ListItemIcon>
-                            <Switch onChange={e => setMode(mode === "light" ? "dark" : "light")} />
+                            <ListItemText primary="Photo Gallery" />
                         </ListItemButton>
                     </ListItem>
                 </List>
