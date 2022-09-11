@@ -23,6 +23,7 @@ function App() {
           } />
           <Route exact path="/blog" element={
             <Box>
+              <Navbar />
               <Stack sx={{ m: 2, }} direction="row" spacing={1} justifyContent="space-between">
                 <Sidebar />
                 <Blog/>
