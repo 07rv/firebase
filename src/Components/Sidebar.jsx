@@ -15,7 +15,7 @@ const Sidebar = () => {
             <Box position="fixed">
                 <List>
                     <ListItem disablePadding>
-                        <ListItemButton component="a" href='/blog'>
+                        <ListItemButton component="a" href='/'>
                             <ListItemIcon>
                                 <WifiTetheringErrorIcon />
                             </ListItemIcon>
