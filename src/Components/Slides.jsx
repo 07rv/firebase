@@ -19,7 +19,7 @@ const Slides = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption sx={{bgcolor: 'error.main'}}>
-                        <Box sx={{height: '300px', bgcolor: 'error.main',  }}>
+                        <Box sx={{height: '150px',}}>
                             <h1 sx={{alignItems: 'flex-start'}}>First slide label</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, 
                                 obcaecati similique. Repellendus totam dignissimos et nobis sint ut corporis ratione! 
