@@ -23,10 +23,6 @@ const Blog = () => {
   return (
     <Box flex={4} p={2}>
       {data.map(items => (
-        // <div>
-        //   <h1>rvfgg</h1>
-        //   {items.id}, ,,, 
-        // </div>
         <Card sx={{ margin: 5 }}>
           <CardHeader
             avatar={
