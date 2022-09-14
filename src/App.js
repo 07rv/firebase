@@ -5,6 +5,7 @@ import Sidebar from "./Components/Sidebar";
 import Slides from "./Components/Slides";
 import Blog from "./Components/Blog";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
                 <Slides />
                 <Rightbar />
               </Stack>
+              <Footer />
             </Box>
           } />
           <Route exact path="/blog" element={
@@ -26,9 +28,10 @@ function App() {
               <Navbar />
               <Stack sx={{ m: 2, }} direction="row" spacing={1} justifyContent="space-between">
                 <Sidebar />
-                <Blog/>
+                <Blog />
                 <Rightbar />
               </Stack>
+              <Footer />
             </Box>
           } />
         </Routes>
